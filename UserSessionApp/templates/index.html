@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Session Example</title>
+</head>
+<body>
+    <h1>Flask Session Example</h1>
+    <p>User Data: {{ user_data }}</p>
+    <form method="POST" action="/set_session">
+        <input type="text" name="user_data" placeholder="Enter user data">
+        <input type="submit" value="Set Session Data">
+    </form>
+    <a href="/clear_session">Clear Session Data</a>
+</body>
+</html>
